@@ -1,0 +1,239 @@
+@media only screen and (max-width: 930px) {
+    #Landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Landing::before {
+        content: "";
+        width: 100vw;
+        height: 100%;
+        background: url("./Images/bg-mobile.png") no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        position: absolute;
+        z-index: -1;
+    }
+    .landing-section {
+        padding: 9rem 0 0 0 !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main-container {
+        gap: 4rem;
+    }
+    .container-img-content {
+        flex-direction: column !important;
+        padding: 0 !important;
+        gap: 4rem;
+    }
+    .container-only-content,
+    .main-content,
+    .text-btn {
+        align-items: center !important;
+    }
+    .text-btn > p {
+        text-align: center !important;
+    }
+
+    #WhyOrganise > .container-img-content {
+        padding: 0 !important;
+    }
+    .questions {
+        margin-bottom: 7rem;
+    }
+
+    .questions > h1 {
+        text-align: center;
+    }
+
+    .events-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8rem;
+    }
+    .questions-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .faq-container {
+        padding: 6rem 1rem 2.5rem 1rem;
+    }
+
+    .faq-title-container {
+        padding-left: 1%;
+    }
+
+    .faq-image-container {
+        width: 100%;
+    }
+    .faq-desc-container {
+        padding: 1em 1em 1em 0em;
+    }
+
+    .faq-desc-text {
+        padding-left: 0.5em;
+    }
+    .faq-desc-container-change {
+        padding: 1em 1em 1em 0em;
+    }
+    .faq-desc-container > span {
+        font-size: 1em;
+    }
+    .faq-desc-container-change > span {
+        font-size: 1em;
+    }
+    .faq-desc-text-change {
+        font-size: 0.85em;
+        padding: 1em 3em 1em 1em;
+
+        z-index: -1;
+        display: block;
+        transition: all 300ms ease;
+    }
+    .sponsors-container > h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .title-container > img {
+        width: 420px;
+    }
+    .sub-title-btn > img {
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title-container > img {
+        width: 360px;
+    }
+    .sub-title-btn > img {
+        width: 360px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .hero-container {
+        width: 100%;
+        height: 100vh;
+        background: url("./Images/Home-image\(mobile\).png") no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sponsors-container {
+        gap: 2rem;
+    }
+    .sponsors-img-container {
+        gap: 2rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #Landing::before {
+        content: "";
+        width: 100vw;
+        height: 100%;
+        background: url("./Images/body-mobile\(small\).png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        z-index: -1;
+    }
+    .side-fixed-btn {
+        padding: 10px 4px;
+        bottom: 32px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-fixed-btn img {
+        width: 70%;
+    }
+
+    .side-fixed-btn:hover {
+        transform: translateY(-8px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .title-container > img {
+        width: 270px;
+    }
+    .sub-title-btn > img {
+        width: 270px;
+    }
+    .faq-image-row-container {
+        width: 95%;
+    }
+
+    .faq-title-container {
+        padding-left: 0%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .hero-container {
+        width: 100%;
+        height: 100vh;
+        background: url("./Images/Hero-image\(small\).png") no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .title {
+        flex-direction: column-reverse;
+    }
+    .title > span {
+        font-size: 1.5em;
+    }
+    .divider {
+        display: none;
+    }
+    .main-content > span {
+        font-size: 0.75em;
+    }
+    .faq-image-container::-webkit-scrollbar {
+        width: 7px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .faq-image-row-container {
+        width: 95%;
+    }
+
+    .faq-desc-container {
+        gap: 0.5rem;
+    }
+
+    .faq-desc-container-change {
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .side-fixed-btn {
+        padding: 10px 2px;
+        bottom: 24px;
+        right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-fixed-btn img {
+        width: 60%;
+    }
+
+    .side-fixed-btn:hover {
+        transform: translateY(-8px);
+    }
+}

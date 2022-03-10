@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+}
+#FAQs {
+    min-width: 100%;
+    z-index: 100;
+}
+
+.faq-title-container {
+    padding-left: 8%;
+    width: 80%;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.faq-container {
+    width: 100%;
+    padding: 6rem 2.5rem 2.5rem 2.5rem;
+    position: relative;
+}
+
+.faq-container > img {
+    position: absolute;
+    top: 0;
+    z-index: -4;
+    width: 20%;
+    left: 8%;
+}
+
+.faq-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.faq-image-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.faq-image-row-container {
+    border-radius: 8px;
+    width: 80%;
+    margin: 0.5em 0;
+    /* padding: 1em; */
+    display: flex;
+    flex-direction: column;
+}
+.faq-desc-container {
+    display: flex;
+    background-color: #a8c1c9;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    border-radius: 8px;
+    gap: 0.5rem;
+    z-index: -1;
+    transition: all 300ms ease;
+}
+
+.faq-desc-container-change {
+    background-color: #a8c1c9;
+    padding: 1em 1em 1em 1em;
+    border-radius: 8px 8px 0px 0px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    display: flex;
+    gap: 0.5rem;
+
+    z-index: -1;
+}
+
+.faq-desc-container > span {
+    font-size: 1.25em;
+    color: black;
+}
+.faq-desc-container-change > span {
+    font-size: 1.25em;
+    color: black;
+}
+
+.faq-desc-text {
+    color: black;
+    font-size: 1.5em;
+    padding-left: 1em;
+    z-index: -1;
+}
+
+.faq-desc-text-2 {
+    color: white;
+    opacity: 0.9;
+    font-size: 1em;
+
+    z-index: -1;
+    display: none;
+    transition: all 300ms ease;
+}
+
+.faq-desc-text-change {
+    color: white;
+    opacity: 0.9;
+    background-color: #5c8d9d;
+    border-radius: 0 0 8px 8px;
+    font-size: 1em;
+    padding: 1em 3em 1em 2.25em;
+
+    z-index: -1;
+    display: block;
+    transition: all 300ms ease;
+}
+
+.faq-image-container::-webkit-scrollbar {
+    width: 11px;
+    cursor: pointer;
+}
+
+.faq-image-container::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: black;
+}
+
+.faq-image-container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #166985;
+}
